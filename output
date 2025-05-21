@@ -1,0 +1,116 @@
+Descriptive Statistics:
+             Open        High         Low       Close   Adj Close  \
+count    4.000000    4.000000    4.000000    4.000000    4.000000   
+mean   152.037500  153.525000  151.112500  153.137500  152.962500   
+std      1.426753    1.278997    1.222276    1.415024    1.431418   
+min    150.250000  152.000000  149.750000  151.500000  151.300000   
+25%    151.262500  152.825000  150.537500  152.437500  152.275000   
+50%    152.200000  153.550000  151.000000  153.075000  152.900000   
+75%    152.975000  154.250000  151.575000  153.775000  153.587500   
+max    153.500000  155.000000  152.700000  154.900000  154.750000   
+
+             Volume        MA_5     RSI_14      MACD  Signal_Line  \
+count  4.000000e+00    4.000000   4.000000  4.000000     4.000000   
+mean   1.070000e+06  151.312500  59.200000  1.100000     0.845000   
+std    1.013246e+05    1.247915   3.238312  0.219848     0.132035   
+min    9.800000e+05  149.800000  55.200000  0.850000     0.700000   
+25%    9.950000e+05  150.625000  57.525000  0.962500     0.760000   
+50%    1.050000e+06  151.375000  59.400000  1.100000     0.840000   
+75%    1.125000e+06  152.062500  61.075000  1.237500     0.925000   
+max    1.200000e+06  152.700000  62.800000  1.350000     1.000000   
+
+       Sentiment_Score  Lag_1_Close  Target_Close  
+count          4.00000      3.00000      4.000000  
+mean           0.20000    152.55000    153.575000  
+std            0.33665      0.96566      1.357387  
+min           -0.20000    151.50000    152.000000  
+25%            0.02500    152.12500    152.825000  
+50%            0.20000    152.75000    153.550000  
+75%            0.37500    153.07500    154.300000  
+max            0.60000    153.40000    155.200000  
+
+
+Correlation Matrix:
+                     Open      High       Low     Close  Adj Close    Volume  \
+Open             1.000000  0.992111  0.948194  0.969902   0.967158  0.870426   
+High             0.992111  1.000000  0.979507  0.992047   0.990243  0.902821   
+Low              0.948194  0.979507  1.000000  0.997008   0.997735  0.894925   
+Close            0.969902  0.992047  0.997008  1.000000   0.999861  0.898566   
+Adj Close        0.967158  0.990243  0.997735  0.999861   1.000000  0.892870   
+Volume           0.870426  0.902821  0.894925  0.898566   0.892870  1.000000   
+MA_5             0.996579  0.999063  0.970167  0.985963   0.983767  0.894991   
+RSI_14           0.995612  0.998763  0.973528  0.988225   0.986615  0.881790   
+MACD             0.990958  0.995784  0.964465  0.980421   0.977136  0.927753   
+Signal_Line      0.984260  0.993845  0.968190  0.981714   0.978406  0.941815   
+Sentiment_Score -0.704396 -0.743193 -0.733127 -0.734726  -0.726311 -0.957660   
+Lag_1_Close      0.999563  0.977881  0.876179  0.919201   0.908915  0.991832   
+Target_Close     0.985160  0.998890  0.986729  0.995930   0.994387  0.913696   
+
+                     MA_5    RSI_14      MACD  Signal_Line  Sentiment_Score  \
+Open             0.996579  0.995612  0.990958     0.984260        -0.704396   
+High             0.999063  0.998763  0.995784     0.993845        -0.743193   
+Low              0.970167  0.973528  0.964465     0.968190        -0.733127   
+Close            0.985963  0.988225  0.980421     0.981714        -0.734726   
+Adj Close        0.983767  0.986615  0.977136     0.978406        -0.726311   
+Volume           0.894991  0.881790  0.927753     0.941815        -0.957660   
+MA_5             1.000000  0.999306  0.996286     0.992805        -0.733933   
+RSI_14           0.999306  1.000000  0.992596     0.988528        -0.712422   
+MACD             0.996286  0.992596  1.000000     0.999044        -0.788160   
+Signal_Line      0.992805  0.988528  0.999044     1.000000        -0.809904   
+Sentiment_Score -0.733933 -0.712422 -0.788160    -0.809904         1.000000   
+Lag_1_Close      0.989027  0.981401  0.995197     0.991832        -0.999316   
+Target_Close     0.995974  0.995683  0.994126     0.994106        -0.758629   
+
+                 Lag_1_Close  Target_Close  
+Open                0.999563      0.985160  
+High                0.977881      0.998890  
+Low                 0.876179      0.986729  
+Close               0.919201      0.995930  
+Adj Close           0.908915      0.994387  
+Volume              0.991832      0.913696  
+MA_5                0.989027      0.995974  
+RSI_14              0.981401      0.995683  
+MACD                0.995197      0.994126  
+Signal_Line         0.991832      0.994106  
+Sentiment_Score    -0.999316     -0.758629  
+Lag_1_Close         1.000000      0.965710  
+Target_Close        0.965710      1.000000  
+
+Volatility (Standard Deviation of Daily Return): 0.0028519400372406206
+
+RSI Status and MACD Crossover Signals:
+        Date  RSI_14 RSI_Status  MACD  Signal_Line MACD_Crossover
+0 2025-04-01    55.2    Neutral  0.85         0.70            Buy
+1 2025-04-02    58.3    Neutral  1.00         0.78            Buy
+2 2025-04-03    60.5    Neutral  1.20         0.90            Buy
+3 2025-04-04    62.8    Neutral  1.35         1.00            Buy
+
+
+Mean Squared Error (Linear Regression): 0.19771095469461025
+/usr/local/lib/python3.11/dist-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: No frequency information was provided, so inferred frequency D will be used.
+  self._init_dates(dates, freq)
+/usr/local/lib/python3.11/dist-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: No frequency information was provided, so inferred frequency D will be used.
+  self._init_dates(dates, freq)
+/usr/local/lib/python3.11/dist-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: No frequency information was provided, so inferred frequency D will be used.
+  self._init_dates(dates, freq)
+/usr/local/lib/python3.11/dist-packages/statsmodels/tsa/statespace/sarimax.py:866: UserWarning: Too few observations to estimate starting parameters for ARMA and trend. All parameters except for variances will be set to zeros.
+  warn('Too few observations to estimate starting parameters%s.'
+
+ARIMA Model Future Price Predictions: 2025-04-05    155.977328
+2025-04-06    157.054532
+2025-04-07    158.131611
+2025-04-08    159.208567
+2025-04-09    160.285399
+Freq: D, Name: predicted_mean, dtype: float64
+
+Anomalies Detected:
+        Date  Close   Volume  Anomaly
+0 2025-04-04  154.9  1200000       -1
+
+Average Close Price by Day of Week:
+Day_of_Week
+Friday       154.90
+Thursday     153.40
+Tuesday      151.50
+Wednesday    152.75
+Name: Close, dtype: float64
